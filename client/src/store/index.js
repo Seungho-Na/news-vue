@@ -7,20 +7,20 @@ Vue.use(Vuex);
 
 export const store = new Vuex.Store({
   state: {
-    news: [],
-    jobs: [],
-    ask: [],
-    user: {},
-    item: {},
+    frontend: [],
+    kbo: [],
+    nba: [],
+    lol: [],
+    coin: [],
   },
-  getters: {
-    fetchedAsk(state) {
-      return state.ask;
-    },
-    fetchedItem(state) {
-      return state.item;
-    },
-  },
+  // getters: {
+  //   fetchedAsk(state) {
+  //     return state.ask;
+  //   },
+  //   fetchedItem(state) {
+  //     return state.item;
+  //   },
+  // },
   mutations,
   // 비동기처리는 actions에서
   actions,

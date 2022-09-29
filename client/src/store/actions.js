@@ -1,52 +1,52 @@
 import {
-  fetchNewsList,
-  fetchJobsList,
-  fetchAskList,
-  fetchUserInfo,
-  fetchCommentItem,
+  fetchFrontEndNews,
+  fetchKBONews,
+  fetchNBANews,
+  fetchLoLNews,
+  fetchCoinNews,
 } from "../api/index.js";
 
 export default {
-  FETCH_NEWS({ commit }) {
-    fetchNewsList()
+  FETCH_FRONTEND({ commit }) {
+    fetchFrontEndNews()
       .then(({ data }) => {
-        commit("SET_NEWS", data);
+        commit("SET_FRONTEND", data);
       })
       .catch((error) => {
         console.log(error);
       });
   },
-  FETCH_JOBS({ commit }) {
-    fetchJobsList()
+  FETCH_KBO({ commit }) {
+    fetchKBONews()
       .then(({ data }) => {
-        commit("SET_JOBS", data);
+        commit("SET_KBO", data);
       })
       .catch((error) => {
         console.log(error);
       });
   },
-  FETCH_ASK({ commit }) {
-    fetchAskList()
+  FETCH_NBA({ commit }) {
+    fetchNBANews()
       .then(({ data }) => {
-        commit("SET_ASK", data);
+        commit("SET_NBA", data);
       })
       .catch((error) => {
         console.log(error);
       });
   },
-  FETCH_USER({ commit }, name) {
-    fetchUserInfo(name)
+  FETCH_LoL({ commit }) {
+    fetchLoLNews()
       .then(({ data }) => {
-        commit("SET_USER", data);
+        commit("SET_LoL", data);
       })
       .catch((error) => {
         console.log(error);
       });
   },
-  FETCH_ITEM({ commit }, id) {
-    fetchCommentItem(id)
+  FETCH_COIN({ commit }) {
+    fetchCoinNews()
       .then(({ data }) => {
-        commit("SET_ITEM", data);
+        commit("SET_COIN", data);
       })
       .catch((error) => {
         console.log(error);

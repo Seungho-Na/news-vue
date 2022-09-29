@@ -1,8 +1,10 @@
 <template>
   <div class="header">
-    <router-link to="/news">News</router-link> |
-    <router-link to="/ask">Ask</router-link> |
-    <router-link to="/jobs">Jobs</router-link>
+    <router-link to="/frontend">Front end</router-link> &nbsp;|&nbsp;
+    <router-link to="/kbo">KBO</router-link> &nbsp;|&nbsp;
+    <router-link to="/nba">NBA</router-link> &nbsp;|&nbsp;
+    <router-link to="/lol">LoL</router-link> &nbsp;|&nbsp;
+    <router-link to="/coin">Coin</router-link>
   </div>
 </template>
 
@@ -23,5 +25,4 @@ export default {};
 .header a {
   color: white;
 }
-
 </style>
